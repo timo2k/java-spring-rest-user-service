@@ -1,6 +1,8 @@
 package de.cellarics.app.spring.ws.ui.model.response;
 
-public class AddressesRest {
+import org.springframework.hateoas.ResourceSupport;
+
+public class AddressesRest extends ResourceSupport {
   private String addressId;
   private String city;
   private String country;
@@ -8,88 +10,51 @@ public class AddressesRest {
   private String postalCode;
   private String type;
 
-  /**
-   * @return the addressId
-   */
   public String getAddressId() {
     return addressId;
   }
 
-  /**
-   * @return the type
-   */
-  public String getType() {
-    return type;
-  }
-
-  /**
-   * @param type the type to set
-   */
-  public void setType(String type) {
-    this.type = type;
-  }
-
-  /**
-   * @return the postalCode
-   */
-  public String getPostalCode() {
-    return postalCode;
-  }
-
-  /**
-   * @param postalCode the postalCode to set
-   */
-  public void setPostalCode(String postalCode) {
-    this.postalCode = postalCode;
-  }
-
-  /**
-   * @return the streetName
-   */
-  public String getStreetName() {
-    return streetName;
-  }
-
-  /**
-   * @param streetName the streetName to set
-   */
-  public void setStreetName(String streetName) {
-    this.streetName = streetName;
-  }
-
-  /**
-   * @return the country
-   */
-  public String getCountry() {
-    return country;
-  }
-
-  /**
-   * @param country the country to set
-   */
-  public void setCountry(String country) {
-    this.country = country;
-  }
-
-  /**
-   * @return the city
-   */
-  public String getCity() {
-    return city;
-  }
-
-  /**
-   * @param city the city to set
-   */
-  public void setCity(String city) {
-    this.city = city;
-  }
-
-  /**
-   * @param addressId the addressId to set
-   */
   public void setAddressId(String addressId) {
     this.addressId = addressId;
   }
 
+  public String getCity() {
+    return city;
+  }
+
+  public void setCity(String city) {
+    this.city = city;
+  }
+
+  public String getCountry() {
+    return country;
+  }
+
+  public void setCountry(String country) {
+    this.country = country;
+  }
+
+  public String getStreetName() {
+    return streetName;
+  }
+
+  public void setStreetName(String streetName) {
+    this.streetName = streetName;
+  }
+
+  public String getPostalCode() {
+    return postalCode;
+  }
+
+  public void setPostalCode(String postalCode) {
+    this.postalCode = postalCode;
+  }
+
+  public String getType() {
+    return type;
+  }
+
+  public void setType(String type) {
+    this.type = type;
+  }
 }
